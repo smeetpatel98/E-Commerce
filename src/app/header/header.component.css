@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* list-style-type: none; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.nav.navbar {
+    background-color: rgb(33, 37, 41);
+    padding: 0px;
+}
+
+a.nav-link {
+    color: white;
+}
+
+.nav h1 {
+    /* color: blueviolet; */
+    margin: 0;
+    font-size: 40px;
+}
+
+img {
+    width: 40px;
+    border-radius: 100px;
+    margin: 7px;
+}
+
+.container-fluid {
+    box-shadow: 0px -20px 9px 0px white;
+}
+
+strong {
+    color: white;
+    padding: 10px;
+}
+
+.nav li a:hover {
+    color: white;
+    border-radius: 40px;
+    background-color: teal;
+}

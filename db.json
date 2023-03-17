@@ -1,0 +1,281 @@
+{
+  "seller": [
+    {
+      "id": 1
+    },
+    {
+      "name": "smeet",
+      "email": "smeet@seller.com",
+      "password": "smeet@@12345",
+      "confpassword": "smeet@@12345",
+      "id": 2,
+      "adminlogintoken": 1
+    }
+  ],
+  "user": [
+    {
+      "userimg": "",
+      "name": "Smeet Patel",
+      "email": "smeet@user.com",
+      "password": "rT5PQbxEF4S8Xb4sXe4qjA==",
+      "confpassword": "rT5PQbxEF4S8Xb4sXe4qjA==",
+      "id": 1,
+      "image": "data:image/png;base64,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"
+    },
+    {
+      "imageurl": "",
+      "name": "Test",
+      "email": "test@user.com",
+      "password": "test@@12345",
+      "confpassword": "test@@12345",
+      "created": "23-2-2023",
+      "image": "data:image/png;base64,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",
+      "id": 2
+    }
+  ],
+  "product": [
+    {
+      "companyname": "Redmi",
+      "name": "Redmi Note 11",
+      "price": 14999,
+      "color": "Black",
+      "catergory": "Mobile Phone",
+      "description": "Key Features:\n16.33 cm (6.43 inch) FHD+ 90 Hz AMOLED DotDisplay\n50 MP + 8 MP + 2 MP + 2 MP Rear Camera\n13 MP Selfie Camera, 6 nm Snapdragon 680 Processor\n5000 mAh battery, Dual stereo speakers",
+      "imageurl": "https://www.reliancedigital.in/medias/REDMI-NOTE-11-Mobile-Phone-492849130-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w4Nzk5NnxpbWFnZS9qcGVnfGltYWdlcy9oNDUvaDk0Lzk4MjAzMDk5MTM2MzAuanBnfDU3ZjMzYWNhODAzMmUwODA4NjlhZTE1Njc3M2EyMWY2NWZlZjJkNTFkYmViOTBkNTE1MDcyMjM2OWRjYjQxZjU",
+      "created": "23-2-2023",
+      "id": 1
+    },
+    {
+      "companyname": "Samsung ",
+      "name": "Samsung Galaxy Watch",
+      "price": 21990,
+      "color": "Black",
+      "catergory": "Smart Watch",
+      "description": "Design: Top Refined Real Watch Design\nHealth Feature: Most Advanced Health Monitoring\nEase of Use: Best Experience in Notification and Music\n4G Connectivity",
+      "imageurl": "https://www.reliancedigital.in/medias/Samsung-SM-R845FZKAINS-Smart-Watch-491900881-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzM3MTR8aW1hZ2UvanBlZ3xpbWFnZXMvaGI4L2gzOC85MzY2NDczODAxNzU4LmpwZ3xhN2ZjNzU2ZjkyMDllZmIwZTNlZTA4NTc3MmQyODk4MDk1NjZhN2IyY2M0YmVkNTk3ODg3ODA4NWQwYjM4N2E1",
+      "created": "23-2-2023",
+      "id": 2
+    },
+    {
+      "companyname": "Samsung ",
+      "name": "Samsung Galaxy Watch4",
+      "price": 26999,
+      "color": "Black",
+      "catergory": "Smart Watch",
+      "description": "Sleek, Seamless and Iconic Design\nDaily Activity & Fitness tracking\nSuper AMOLED Display\n450 x 450 Display Resolution",
+      "imageurl": "https://www.reliancedigital.in/medias/Samsung-R870N-44mm-GalaxyWatch4-491997612-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w4NzAwOHxpbWFnZS9qcGVnfGltYWdlcy9oNzMvaDEyLzk3NTE2NTg2NTk4NzAuanBnfDU5OWE5OWUzNzRmZjYzYmQwOGEzYjJjMzBhMjliOTM4NTE3MWI4ODE5ZTYwYzMxY2I4NTVjNjA3MjZlOTNhZTM",
+      "created": "23-2-2023",
+      "id": 3
+    },
+    {
+      "companyname": "Apple",
+      "name": "Apple Watch SE GPS",
+      "price": 29990,
+      "color": "Black",
+      "catergory": "Smart Watch",
+      "description": "Retina LTPO OLED Display\nFall Detection and Emergency\nSOS for Your Safety\nWater Resistant to 50 metres",
+      "imageurl": "https://www.reliancedigital.in/medias/Apple-SE-Smart-Watches-491901145-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTYwNjV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJiL2g1My85Mzg2Mjg1NzYwNTQyLmpwZ3w4MGY4YmQzOTU1MjEwYWI2NDc0YTU5Y2M4NDA5Y2EyNmRiNThhMmI0ZWQ4YzdjYWJkZGMzMjhkODJlOGQ2MmJm",
+      "created": "23-2-2023",
+      "id": 4
+    },
+    {
+      "companyname": "Apple",
+      "name": "Apple Watch Series 6 GPS + Cellular - 44 mm",
+      "price": 47990,
+      "color": "Red",
+      "catergory": "Smart Watch",
+      "description": "Measure your Blood Oxygen Level\nTake an ECG Anytime, Anywhere\nThe New Sleep App\nThe Always-On Retina LTPO OLED Display",
+      "imageurl": "https://www.reliancedigital.in/medias/Apple-Series-6-Smart-Watches-491901179-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMDI2OTd8aW1hZ2UvanBlZ3xpbWFnZXMvaDJiL2g2OS85Mzg2MjkyMzE0MTQyLmpwZ3w4N2MyNDNlNGZiNGNhODc5Y2NiNmM0Y2ZhYzAwNTljZDM2MjQzMzQ0OGUyN2E2OWMwM2Q3ZWYyNDFjOGQ0YmI1",
+      "created": "23-2-2023",
+      "id": 5
+    },
+    {
+      "companyname": "TCL",
+      "name": "TCL 139.7 cm (55 inch)",
+      "price": 40990,
+      "color": "Black",
+      "catergory": "TV",
+      "description": "Supported Apps: Netflix, You Tube, Hot star, Zee5, Voot\nOperating System: Android TV(Google Assistant)\nResolution: Ultra HD 3840 x 2160\nConnectivity: 3 HDMI Ports, 2 USB Ports",
+      "imageurl": "https://www.reliancedigital.in/medias/TCL-55C725-LED-TV-493179298-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzA4MDAxfGltYWdlL2pwZWd8aW1hZ2VzL2hkNC9oYzQvOTkwNzc2NzE4MTM0Mi5qcGd8ZTY4OGRkZmM2NzNmZjU5M2I2MTEyYjAxMWE5NmNiMzcwOTdlZTc5ZTI5MDYwMjZlYTFlMjMxYzNlNzFmZjg2NQ",
+      "created": "23-2-2023",
+      "id": 6
+    },
+    {
+      "companyname": "BPL",
+      "name": "BPL 139.7 cm (55 inch) Ultra HD (4K) LED Android Smart TV, 55U-A4310",
+      "price": 35990,
+      "color": "Blue",
+      "catergory": "TV",
+      "description": "Supported Apps: Netflix, YouTube, Amazon Prime\nOperating System: Android TV (Google Assistant)\nResolution: Ultra HD 4K (3840 x 2160)\nConnectivity: 3 HDMI ports",
+      "imageurl": "https://www.reliancedigital.in/medias/BPL-55U-A4310-Television-491893309-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyNjY2NjJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDI4L2hjNy85NzMwODgxNDIxMzQyLmpwZ3w0ZTg3YzdkOTBiYWVmNmM1YjM0ZWZhMWMzMjMxYjAwY2Q5MzM1ZjY2ZjYyYzE3YTc0M2Y3OWUxNzE4YmZhYTFm",
+      "created": "23-2-2023",
+      "id": 7
+    },
+    {
+      "companyname": "Lifelong",
+      "name": "Ceiling Fan",
+      "price": 1100,
+      "color": "Coffee Brown",
+      "catergory": "Ceiling Fan",
+      "description": "Dynamically Balanced Blades\nSuperior components for longer life\nSuper Reliable and Efficient 100% Copper Motor\nHigh Speed Fan (380 RPM) and Corrosion Resistant",
+      "imageurl": "https://www.reliancedigital.in/medias/Lifelong-LLCF150-FANS-492910946-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDUwNnxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDY5Lzk4MzEwMDY5Mjg5MjYuanBnfDFjZDgzMGZjNzA5NWE2YTcwZjM0Mjc0MTY4MzI1YmRjODMyNmM5MGYzZTE5Y2I3MWRhMzI1ZmNkZWVmYWZhMmI",
+      "created": "23-2-2023",
+      "id": 8
+    },
+    {
+      "companyname": "Wonderchef ",
+      "name": "Wonderchef Nutri-Blend ",
+      "price": 3999,
+      "color": "White",
+      "catergory": "Kitchen Machine ",
+      "description": "Complete Kitchen Machine Offers an All-In-One Solution and Performs Four Functions - Mixer, Grinder, Juicer, and Chopper\nInstead of Many Separate Appliances, You Now Need Only One\n400 Watts Superfast Motor Blends, Grinds, Juices And Chops in Seconds\nMotor Unit is Very Steady and Safe To Use",
+      "imageurl": "https://www.reliancedigital.in/medias/Wonderchef-Nutri-Blend-Juicer-Mixer-Grinders-491472940-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMjI0NzV8aW1hZ2UvanBlZ3xpbWFnZXMvaDg4L2g0OS85NDYyNDYxMjM1MjMwLmpwZ3wxMTU5ZWQwYzRhOTAyNmFkOTE2MjZjNTQ2NWMzZjZhNjg0Njg2MjM5ZmFkMjBhMDAyOWQ4MjNhODdlYzYyMmRi",
+      "created": "23-2-2023",
+      "id": 9
+    },
+    {
+      "companyname": "Lenovo",
+      "name": "Lenovo IdeaPad 3 Laptop ",
+      "price": 40990,
+      "color": "Grey",
+      "catergory": "Laptop",
+      "description": "Processor: 11th Gen Intel Core i3-1115G4\nRAM: 8 GB\nInternal Storage: 512 GB\nStorage Type: SSD",
+      "imageurl": "https://www.reliancedigital.in/medias/Lenovo-82H701DNIN-Laptop-493178905-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzkzMzR8aW1hZ2UvanBlZ3xpbWFnZXMvaDIyL2g3ZC85OTE1NDk0NjI5NDA2LmpwZ3w2MDRmN2YwZjhhZGMyZWVmMzI4NjQ4YTRjYzZlMDQ0ZmEwNDQ4NDM2NjE4ZDg2OGUzYjNiOTBmZmYwODY5ODli",
+      "created": "23-2-2023",
+      "id": 10
+    },
+    {
+      "companyname": "HP ",
+      "name": "HP 15s-FQ5112TU Laptop",
+      "price": 64990,
+      "color": "Silver",
+      "catergory": "Laptop",
+      "description": "Processor: 12th Gen Intel Core i5-1235U\nRAM: 16 GB\nInternal Storage: 512 GB\nStorage Type: SSD",
+      "imageurl": "https://www.reliancedigital.in/medias/HP-6Q2M3PA-ACJ-Laptop-493177049-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMDkzMjV8aW1hZ2UvanBlZ3xpbWFnZXMvaGY1L2g0Yi85ODY0Mjg2ODYzMzkwLmpwZ3w3MTdmZGRjNDdkMjViNzA1ODY4NjQ0YWQ2NmRlMWIyZWU5YjZiZGE0Y2JmNTBmNTEzNWFlOTRkMDQwMTc5ZWRh",
+      "created": "23-2-2023",
+      "id": 11
+    },
+    {
+      "companyname": "Firefox Bikes",
+      "name": "Nexus-D 27.5T MTB Mountain Bike",
+      "price": 5999,
+      "color": "Grey",
+      "catergory": "Bikes ",
+      "description": "The Firefox Nexus is built on a MTB specific Steel frame which is Sturdy and durable. The frame offers good stability.\nSteel hardtail MTB frame with suspension, The bike is equipped with Mechanical disc -Brake for Power Braking, Double wall rims for extra strength, Seat QR for easy saddle adjustment, Tire Size :27.5 inches, Frame Size : 17 inches, Ideal For :13+ Years, Min Rider Height : 5.5 feet, Max Rider Height : 5.10 feet, Front Brake : D-Brake, Rear Brake : D-Brake, Frame Material : Steel, Side Stand: Yes I Reflector: YES I Suspension Front I Refer Installation video in Images as User Manual\nThe cycle is delivered in Semi-Assembled condition (85% assembled). Refer to installation video in images to assemble the bike yourself or Add Cycle assembly (select pincodes only) for home installation while checkout. In case you need any further assistance in assembling the bike please visit nearest Firefox Dealer. To know your nearest Firefox Dealer visit Firefox website",
+      "imageurl": "https://m.media-amazon.com/images/I/71MzzE-FvFL._SX679_.jpg",
+      "created": "23-2-2023",
+      "id": 12
+    },
+    {
+      "companyname": "Storio Cubes",
+      "name": "Cubes 3x3 ",
+      "price": 145,
+      "color": "MultiColour",
+      "catergory": "Toy",
+      "description": "mproves your concentration improves your hand eye co preservationists problem solving skills Improves creativity & imagination skills\nStorio makes toys that are entertaining and safe. All toys are EN71 certified which is defined by stringent European standards and hence devoid of banned phthalates.\nSpeedup your solving time without any effort and bring you the best turning feeling in advance. Easy turning and smooth play.",
+      "imageurl": "https://m.media-amazon.com/images/I/61fB-s4DPVS._SX522_.jpg",
+      "created": "23-2-2023",
+      "id": 13
+    },
+    {
+      "companyname": "Babique Unicorn",
+      "name": "Teddy Bear Plush Soft Toy ",
+      "price": 208,
+      "color": "Yellow",
+      "catergory": "Toy",
+      "description": "Made out of non-toxic polyester and fur fabrics of good quality\nSoft and Cuddly filling, Huggable and loveable for someone special, Teach your loved one the act of hugging with the help of these teddies\nExcellent Poly-staple & conjugate filling fiber used has good resiliency making it most appropriate for machine or hand wash\nSize:- 25 Cm",
+      "imageurl": "https://m.media-amazon.com/images/I/31QPmZKotmL.jpg",
+      "created": "23-2-2023",
+      "id": 14
+    },
+    {
+      "companyname": "LuvLap",
+      "name": "Sunny Ride on & Car for Kids ",
+      "price": 1199,
+      "color": "Pink",
+      "catergory": "Toy",
+      "description": "Safe and secure: Sunny baby car Ride on ensures better safety prescribed for babies and toddlers\nHeavy duty: The Sunny baby ride on toy has been designed in a way to handle weights of up to 15-20 kilograms. It is the ideal kids push toy for boys and girls ages 1-3\nMade from durable materials: The Sunny toy car is a very well-designed kids push car. Made using premium grade virgin PVC plastic material, it is completely non-toxic and is odourless, ensuring a smooth ride for your little one every time\nConvenient rear handle: Parents always prefer to be control of their kids’ safety. Keeping this in mind, the Sunny kids ride on baby toy has been designed with a solid rear handle, so that parents can steer the car and also enjoy easy transport\nDynamic steering controls: The Sunny features a very responsive steering, which lets your baby steer the baby toy in any direction. Also, it comes with working horn buttons as well, along with a backrest for added driving comfort",
+      "imageurl": "https://m.media-amazon.com/images/I/71iEZNOt2yL._SX522_.jpg",
+      "created": "23-2-2023",
+      "id": 15
+    }
+  ],
+  "cartdata": [
+    {
+      "companyname": "Lifelong",
+      "name": "Ceiling Fan",
+      "price": 1100,
+      "color": "Coffee Brown",
+      "catergory": "Ceiling Fan",
+      "description": "Dynamically Balanced Blades\nSuperior components for longer life\nSuper Reliable and Efficient 100% Copper Motor\nHigh Speed Fan (380 RPM) and Corrosion Resistant",
+      "imageurl": "https://www.reliancedigital.in/medias/Lifelong-LLCF150-FANS-492910946-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDUwNnxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDY5Lzk4MzEwMDY5Mjg5MjYuanBnfDFjZDgzMGZjNzA5NWE2YTcwZjM0Mjc0MTY4MzI1YmRjODMyNmM5MGYzZTE5Y2I3MWRhMzI1ZmNkZWVmYWZhMmI",
+      "created": "23-2-2023",
+      "id": 8,
+      "quantity": 1,
+      "userid_login": 1,
+      "totalprice": 1100,
+      "taxamount": 1140,
+      "tax": 40,
+      "productid": 8
+    },
+    {
+      "companyname": "Babique Unicorn",
+      "name": "Teddy Bear Plush Soft Toy ",
+      "price": 208,
+      "color": "Yellow",
+      "catergory": "Toy",
+      "description": "Made out of non-toxic polyester and fur fabrics of good quality\nSoft and Cuddly filling, Huggable and loveable for someone special, Teach your loved one the act of hugging with the help of these teddies\nExcellent Poly-staple & conjugate filling fiber used has good resiliency making it most appropriate for machine or hand wash\nSize:- 25 Cm",
+      "imageurl": "https://m.media-amazon.com/images/I/31QPmZKotmL.jpg",
+      "created": "23-2-2023",
+      "id": 14,
+      "quantity": 1,
+      "userid_login": 1,
+      "user_name": "Smeet Patel",
+      "totalprice": 208,
+      "taxamount": 248,
+      "tax": 40,
+      "productid": 14
+    },
+    {
+      "companyname": "Storio Cubes",
+      "name": "Cubes 3x3 ",
+      "price": 145,
+      "color": "MultiColour",
+      "catergory": "Toy",
+      "description": "mproves your concentration improves your hand eye co preservationists problem solving skills Improves creativity & imagination skills\nStorio makes toys that are entertaining and safe. All toys are EN71 certified which is defined by stringent European standards and hence devoid of banned phthalates.\nSpeedup your solving time without any effort and bring you the best turning feeling in advance. Easy turning and smooth play.",
+      "imageurl": "https://m.media-amazon.com/images/I/61fB-s4DPVS._SX522_.jpg",
+      "created": "23-2-2023",
+      "id": 13,
+      "quantity": 1,
+      "userid_login": 2,
+      "user_name": "Test",
+      "totalprice": 145,
+      "taxamount": 185,
+      "tax": 40,
+      "productid": 13
+    }
+  ],
+  "logdata": [
+    {
+      "email": "smeet@user.com",
+      "password": "rT5PQbxEF4S8Xb4sXe4qjA==",
+      "id": 1,
+      "lastlogin_date": "Tue Feb 28 2023 15:29:00 GMT+0530 (India Standard Time)/15:29:0",
+      "currentlogin_date": "Thu Mar 02 2023 17:11:44 GMT+0530 (India Standard Time)/17:11:44"
+    },
+    {
+      "email": "test@user.com",
+      "password": "test@@12345",
+      "id": 2,
+      "lastlogin_date": "27-2-2023/21:52:50",
+      "currentlogin_date": "Mon Feb 27 2023 21:57:33 GMT+0530 (India Standard Time)/21:57:33"
+    },
+    {
+      "email": "xyz@user.com",
+      "password": "ZhzVvpaPpW0T40GiS4t05g==",
+      "id": 3,
+      "lastlogin_date": "28-2-2023/15:24:42",
+      "currentlogin_date": "Tue Feb 28 2023 15:24:42 GMT+0530 (India Standard Time)/15:24:42"
+    }
+  ]
+}

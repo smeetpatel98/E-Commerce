@@ -1,0 +1,16 @@
+.invalidinput {
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+}
+body{
+    font-family: math;
+}
+/* .route {
+    position: relative;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+} */

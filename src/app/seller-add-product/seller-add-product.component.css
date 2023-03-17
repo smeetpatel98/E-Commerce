@@ -1,0 +1,48 @@
+.card {
+    width: 23%;
+    padding: 0rem;
+    display: inline-block;
+    margin: 1%;
+    height: 27rem;
+}
+
+img.card-img-top {
+    /* width: 175px; */
+    /* max-width: 50%; */
+    height: 7rem;
+    object-fit: contain;
+    padding-top: 10px;
+}
+
+h4.list-group-item-heading {
+    font-size: 23px;
+}
+.text {
+    font-size: 85%;
+    height: 13rem;
+}
+.button {
+    /* padding-left: 40px; */
+    padding-top: 32px;
+}
+
+img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .card.mb-2 {
+        display: inline-block;
+        width: 23%;
+        margin: 10px;
+        /* border: 3px solid; */
+    }
+}
+@media only screen and (max-width: 995px) {
+    .card.mb-2 {
+        display: inline-block;
+        width: auto;
+        margin: 10px;
+        /* border: 3px solid; */
+    }
+}

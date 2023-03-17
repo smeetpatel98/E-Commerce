@@ -1,0 +1,96 @@
+*{
+    box-sizing:  border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    line-height: 1.5;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background-color: #12263a;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.new-price span{
+    color:#256eff;
+}
+.product-details h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+
+}
+.product-details p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-details ul{
+    margin: 1rem, 0;
+    font-size: 0.9rem;
+}
+.product-details ul li{
+    margin: 0;
+    list-style: none;
+    background-image: url(/src/assets/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-details ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.img-item {
+    width: 50%;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+img{
+    width: 200px;
+}
+.card-wrapper {
+    margin: 5%;
+}

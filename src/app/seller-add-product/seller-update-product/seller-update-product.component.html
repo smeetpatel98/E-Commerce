@@ -1,0 +1,101 @@
+<div class="container">
+    <div class="col-6">
+        <h2>Edit Product</h2>
+        <form #product="ngForm" (ngSubmit)="edit(product.value)" class="formtags">
+            <div class="mb-3">
+                <label for="productname" class="form-label">Enter Company Name:</label>
+                <input type="text" class="form-control" ngModel="{{productdata?.companyname}}" name="companyname">
+            </div>
+            <div class="mb-3">
+                <label for="productname" class="form-label">Enter Product Name:</label>
+                <input type="text" class="form-control" ngModel="{{productdata?.name}}" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="productprice" class="form-label">Enter Product Price:</label>
+                <input type="number" class="form-control" ngModel="{{productdata?.price}}" name="price">
+            </div>
+            <div class="mb-3">
+                <label for="productcolor" class="form-label">Enter Product Color:</label>
+                <input type="text" class="form-control" ngModel="{{productdata?.color}}" name="color">
+            </div>
+            <div class="mb-3">
+                <label for="productcategory" class="form-label">Enter Product Category:</label>
+                <input type="text" class="form-control" ngModel="{{productdata?.catergory}}" name="catergory">
+            </div>
+            <div class="mb-3">
+                <label for="productcategory" class="form-label">Enter Product description:</label>
+                <textarea class="form-control" ngModel="{{productdata?.description}}" name="description"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="productimageurl" class="form-label">Image:</label>
+                <!-- <textarea class="form-control" ngModel="{{productdata?.imageurl}}" name="imageurl"></textarea> -->
+                <!-- <img name="{{productdata?.imageurl}}" alt="xyx"> -->
+                <label for="uploadimage" class="form-label">Upload Image:</label>
+                <img class="imgurl" [src]="productdata?.imageurl" alt="">        
+                <input type="file" name="{{productdata?.imageurl}}" (change)="imageupload($event)">
+            </div>
+            <div class="mb-3">
+                <label for="">Uploaded Image:</label>
+                <img class="imgurl" [src]="url" alt="">
+                <!-- <button type="button" (click)="onUpload()"></button> -->
+            </div>
+            <button type="submit" class="btn btn-success btn-sm m-1">Save</button>
+            <button type="reset" class="btn btn-light btn-sm m-1">Clear</button>
+            <button type="reset" class="btn btn-secondary btn-sm m-1" routerLink="/app-seller-add-product">Back to
+                list</button>
+
+            <div class="row" *ngIf="productupdatemsg">
+                <div class="col-lg-5">
+                    <div class="alert alert-success m-1" role="alert">
+                        {{productupdatemsg}}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-6">
+        <div class="row">
+            <!-- <div class="col-6"> -->
+            <div class="card mb-2">
+                <img class="card-img-top" src="{{productdata?.imageurl}}" alt="Card image cap">
+                <div class="card-body m-2">
+                    <h4 class="list-group-item-heading">Product Name: {{productdata?.name}}</h4>
+                    <p class="list-group-item-text">Color: {{productdata?.color}}</p>
+                    <p class="list-group-item-text">Catergory: {{productdata?.catergory}}</p>
+                    <p class="list-group-item-text">Price: {{productdata?.price}}</p>
+                    <button type="button" class="btn btn-primary mt-1" (click)="open(mymodal)">Click for
+                        details</button>
+                </div>
+
+                <!-- Modal popup -->
+                <ng-template #mymodal let-modal>
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-basic-title">Details</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true">X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        {{productdata?.description}}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark"
+                            (click)="modal.close('Save click')">Ok</button>
+                    </div>
+                </ng-template>
+                <!-- <ul class="list-group list-group-flush">
+                                <li class="list-group-item">..</li>
+                                <li class="list-group-item">..</li>
+                            </ul> -->
+            </div>
+
+        </div>
+        <div class="row" *ngIf="">
+            <div class="col-lg-5">
+                <div class="alert alert-success m-1" role="alert">
+                    <!-- {{productdeletemsg}} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

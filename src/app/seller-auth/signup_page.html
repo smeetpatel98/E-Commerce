@@ -1,0 +1,138 @@
+<!-- <Sign-Up Page> -->
+<!-- <div class="container">
+    <h2 class=" py-3">User-Sign Up</h2>
+    <form #sellersingup="ngForm" (ngSubmit)="usersignup(sellersingup.value)" class="formtags">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter Name"
+                [(ngModel)]="name" ngModel name="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email"
+                [(ngModel)]="email" ngModel name="email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter Password" [(ngModel)]="password" ngModel
+                name="password">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confrim Password:</label>
+            <input type="password" class="form-control" i placeholder="Enter Confrim Password"
+                [(ngModel)]="confpassword" ngModel name="confpassword">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <!-- <button type="submit" class="btn btn-secondary" (click)="openloginpage()">Login</button> -->
+<!-- <button type="submit" [disabled]="sellersingup.invalid" class="btn btn-primary m-1">Sign up</button> -->
+<!-- <div class="row">
+            <div class="col-lg-6">
+                <div class="alert alert-primary m-1" role="alert">
+                    if You have account please click Login button
+                </div>
+            </div>
+        </div> -->
+<!-- </form>
+</div> -->
+
+<div class="container">
+    <!-- Section: Design Block -->
+    <section class="text-center">
+        <!-- Background image -->
+        <div class="p-5 bg-image" style="background-image: url('https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Pure-CSS-Animated-Background.gif'); height: 300px;"></div>
+        <!-- Background image -->
+
+        <div class="card mx-4 mx-md-5 shadow-5-strong" style="margin-top: -100px;background: hsla(0, 0%, 100%, 0.8); backdrop-filter: blur(30px);">
+            <div class="card-body py-4 px-md-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-5">Sign up now</h2>
+                        <form #sellersingup="ngForm" (ngSubmit)="usersignup(sellersingup.value)" class="formtags">
+                            <!-- 2 column grid layout with text inputs for the first and last names -->
+                            <div class="row">
+                                <div class="mb-3">
+                                    <label for="uploadimage" class="form-label">Upload Image:</label>
+                                    <img [src]="url" alt="">
+                                    <input type="file" ngModel name="imageurl" (change)="imageupload($event)">
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label">Name:</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                            placeholder="Enter Name" ngModel name="name" #name="ngModel" required>
+                                    </div>
+                                    <p><span *ngIf="name.invalid && name.touched">Please enter Valid Name</span>
+                                    </p>
+                                </div>
+
+
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Email address:</label>
+                                    <input type="email" id="inputemail" class="form-control"
+                                        aria-describedby="emailHelp" placeholder="Enter Email" ngModel name="email"
+                                        value="inputemail" #email="ngModel" value="abc@user.com" required
+                                        placeholder="name@user.com" />
+                                    <p><span *ngIf="email.invalid && email.touched">Please enter Valid Email</span>
+                                        <small>example:name@user.com</small>
+                                </div>
+
+                                <!-- Password input -->
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Password:</label>
+                                    <input type="password" class="form-control" placeholder="Enter Password" ngModel
+                                        name="password" #password="ngModel" value="Example:abc@@1234" required />
+                                    <p><span *ngIf="password.invalid && password.touched">Please enter Valid
+                                            Password</span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Confirm Password:</label>
+                                    <input type="password" class="form-control" i placeholder="Enter Confrim Password"
+                                        ngModel name="confpassword" />
+                                </div>
+                            </div>
+                            <!-- Checkbox -->
+                            <!-- Submit button -->
+                            <button type="submit" [disabled]="!sellersingup.valid"
+                                class="btn btn-primary btn-block mb-4">
+                                Sign up
+                            </button>
+
+                            <!-- Register buttons -->
+                            <!-- <div class="text-center">
+                                <p>or sign up with:</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div> -->
+                        </form>
+                    </div>
+                    <div class="row" *ngIf="success">
+                        <div class="col-lg-5">
+                            <div class="alert alert-success m-1" role="alert">
+                                {{success}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Design Block -->
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Admin-Login Page</h2>
+    <form #sellerlogin="ngForm" (ngSubmit)="userlogin(sellerlogin.value)" class="formtags">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter Email" ngModel name="email" #email="ngModel" required>
+            <p><span *ngIf="email.invalid && email.touched">Please enter Valid Email</span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" ngModel
+                name="password" #password="ngModel" required>
+            <p><span *ngIf="password.invalid && password.touched">Please enter Valid
+                    Password</span>
+        </div>
+        <button type="submit" [disabled]="!sellerlogin.valid" class="btn btn-primary m-1">Login</button>
+        <!-- //Loader -->
+        <div class="text-center" *ngIf="loader">
+            <div class="spinner-border" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        <div class="row" *ngIf="show">
+            <div class="col-lg-5">
+                <div class="alert alert-danger m-1" role="alert">
+                    {{errormessage}}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

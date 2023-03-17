@@ -1,0 +1,131 @@
+<div class="image">
+    <!-- <img src="https://media.istockphoto.com/photos/isolated-of-shipping-paper-boxes-inside-blue-shopping-cart-trolley-on-picture-id1306668349?b=1&k=20&m=1306668349&s=170667a&w=0&h=lyTN3Kasg206073u4GMW2VwBzil8juVpt3nsqithplw="
+        alt="" srcset=""> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <h5 class="m-3">Filter:</h5>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                        (click)="searchfilter($event)" value="Low">
+                    <label class="form-check-label" >
+                        <h6>Low to High Price</h6>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                        (click)="searchfilter($event)" value="High">
+                    <label class="form-check-label" >
+                        <h6>High to Low Price</h6>
+                    </label>
+                </div>
+                <hr>
+                <h6 class="m-3">Categories</h6>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                        (click)="searchfilter($event)" value="All">
+                    <label class="form-check-label" >
+                        <h6>All</h6>
+                    </label>
+                </div>
+                <div class="form-check" *ngFor="let item of productlist | removefiltercate;  let i = index">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" 
+                        (click)="searchfilter($event)" value="{{item.catergory}}">
+                    <label class="form-check-label" >
+                        <h6>{{item.catergory}}</h6>
+                    </label>
+                </div>
+                <hr>
+                <h6 class="m-3">Color Wise:</h6>
+                <hr>
+                <div class="form-check" *ngFor="let item of productlist | removefiltercate;  let i = index">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                        (click)="searchfilter($event)" value="{{item.color}}">
+                    <label class="form-check-label" >
+                        <h6>{{item.color}}</h6>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-md-10 col-sm-10">
+                <div class="row">
+                    <div class="col-lg-6 col-md-9 col-sm-9">
+                        <form class="d-flex m-3">
+                            <input class="form-control me-1" type="search" placeholder="Search" (keyup)="searchfilter()"
+                                aria-label="Search" [(ngModel)]="searchname" name="searchname">
+                            <button class="btn btn-outline-success" (click)="searchfilter()"
+                                type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="cardclass">
+                    <div class="card mb-2" *ngFor="let x of productlist let i= index">
+                        <div class="bg-image hover-zoom">
+                            <img class="card-img-top text-center " src="{{x.imageurl}}" alt="Card image cap">
+                        </div>
+
+                        <!-- <hr> -->
+                        <div class="card-body m-2">
+                            <div class="text">
+                                <div class="inner-text">
+                                    <!-- <p class="list-group-item-text">Company Name: {{x.companyname}}</p> -->
+                                    <p class="list-group-item-text">{{x.name}}</p>
+                                    <p class="list-group-item-text">Color: {{x.color}}</p>
+                                    <!-- <p class="list-group-item-text">Catergory: {{x.catergory}}</p> -->
+                                    <!-- <p class="list-group-item-text">${{x.price}}</p> -->
+                                </div>
+
+                            </div>
+                            <!-- <hr> -->
+                            <div class="btnn">
+                                <p class="list-group-item-text">Rs.{{x.price}}</p>
+                                <button type="button" class="btn btn-outline-primary btn-sm mt-1"
+                                    routerLink="/details/{{x.id}}">
+                                    <fa-icon [icon]="cart"></fa-icon>
+                                </button>
+                            </div>
+
+                            <!-- <button type="button" class="btn btn-outline-info btn-sm mt-1 mx-1" (click)="addtocart()">Add to
+                            Cart</button> -->
+                            <!-- <button type="button" class="btn btn-success mt-1"
+                                    routerLink="/app-seller-update-product/{{x.id}}">Edit</button> -->
+                        </div>
+
+                        <!-- Modal popup -->
+                        <ng-template #mymodal let-modal>
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modal-basic-title">Details</h4>
+                                <button type="button" class="close" aria-label="Close"
+                                    (click)="modal.dismiss('Cross click')">
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                {{x.description}}
+                            </div>
+                            <div class="modal-button">
+                                <button type="button" class="btn btn-primary btn-sm " routerLink="/details/{{x.id}}"
+                                    (click)="modal.close('Save click')">Full Details
+                                    Click Me</button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-dark"
+                                    (click)="modal.close('Save click')">Ok</button>
+                            </div>
+                        </ng-template>
+                    </div>
+                    <div class="row" *ngIf="">
+                        <div class="col-lg-5">
+                            <div class="alert alert-danger m-1" role="alert">
+                                {{productdeletemsg}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

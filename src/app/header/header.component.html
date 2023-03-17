@@ -1,0 +1,67 @@
+<nav class="nav navbar">
+    <div class="container-fluid">
+
+        <h3><a>
+                <fa-icon [icon]="user"></fa-icon> E-COMM
+            </a> </h3>
+        <div class=" navbar" id="navbarNav">
+
+            <div [ngSwitch]="menutype">
+                <ul *ngSwitchCase="'default'">
+                    <li class="nav-item"><a routerLink="" class="nav-link">
+                            <fa-icon [icon]="home"></fa-icon>
+                        </a></li>
+                    <li class="nav-item"><a routerLink="/app-userlogin" class="nav-link ">
+                            <fa-icon [icon]="user" class="mx-2"></fa-icon> Login
+                        </a></li>
+                    <li class="nav-item"><a routerLink="/app-loginpage" class="nav-link" data-mdb-toggle="tooltip"
+                            data-mdb-placement="bottom" title="Only Admin Can login">Admin Login</a></li>
+                </ul>
+                <ul *ngSwitchCase="'shopping'">
+                    <!-- //Admin Panel -->
+                    <li class="nav-item"><a routerLink="/seller-home" class="nav-link">Home</a></li>
+                    <!-- <li><a routerLink="/recipes">Recipe Page </a></li> -->
+                    <li class="nav-item"><a routerLink="/app-shopping-list" class="nav-link">
+                            <fa-icon [icon]="store"></fa-icon>Shopping
+                        </a></li>
+
+                    <li class="nav-item"><a routerLink="/cart" class="nav-link">
+                            <fa-icon [icon]="cart"></fa-icon>
+                            ({{cartitem}})
+                        </a></li>
+                    <li class="nav-item">
+                        <a routerLink="/app-seller-add-product" class="nav-link">Add Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/app-seller-add-product" href="#">List of Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/app-userlist" href="#">User-List</a>
+                    </li>
+                    <!-- <li><img src="{{userimg}}" alt=""></li> -->
+                    <li class="nav-item"><a routerLink="" (click)="logout()" class="nav-link"> <strong>{{login_acc_name
+                                |
+                                titlecase}}</strong> :Log Out</a>
+                    </li>
+                </ul>
+                <ul *ngSwitchCase="'usershopping'">
+                    <li class="nav-item"><a routerLink="/seller-home" class="nav-link">
+                            <fa-icon [icon]="home"></fa-icon>
+                        </a></li>
+                    <!-- <li><a routerLink="/recipes">Recipe Page </a></li> -->
+                    <li class="nav-item"><a routerLink="/app-shopping-list" class="nav-link">
+                            <fa-icon [icon]="store"></fa-icon> Shopping
+                        </a></li>
+                    <li class="nav-item"><a routerLink="/cart" class="nav-link">
+                            <fa-icon [icon]="cart"></fa-icon>({{cartitem}})
+                        </a></li>
+                    <li class="nav-item"><img src="{{userimg}}" alt=""><strong>{{login_acc_name
+                            |
+                            titlecase}}</strong></li>
+                    <li class="nav-item"><a href="" (click)="logout()" class="nav-link">LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

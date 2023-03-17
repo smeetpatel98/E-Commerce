@@ -1,0 +1,16 @@
+.container h2 {
+    text-align: center;
+}
+
+label {
+    /* display: inline-block; */
+    float: left;
+}
+
+img {
+    width: 30%;
+}
+p {
+    color: red;
+    display: flex;
+}

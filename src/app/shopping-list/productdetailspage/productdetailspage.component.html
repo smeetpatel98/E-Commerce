@@ -1,0 +1,74 @@
+<div class="container" *ngIf="singleproductdata">
+    <div class="card-wrapper">
+    <div class="card">
+       <div class="img-item">
+            <img src="{{singleproductdata.imageurl}}" alt="" srcset="">
+       </div>
+       <div class="product-content">
+            <h2 class="product-title">{{singleproductdata.name}}</h2>
+            <div class="product-price">
+                <p class="new-price">Price: <span>Rs.{{singleproductdata.price}}</span></p>
+            </div>
+            <div class="product-details"><b>About this Item: </b> {{singleproductdata.description}} 
+            <ul>
+                <li><fa-icon [icon]="check"></fa-icon>Color: <span>{{singleproductdata.color}}</span></li>
+                <li><fa-icon [icon]="check"></fa-icon>Available: <span>In stock</span></li>
+                <li><fa-icon [icon]="check"></fa-icon>Category: <span>{{singleproductdata.catergory}}</span></li>
+                <li><fa-icon [icon]="check"></fa-icon>Shipping Area: <span>All over the India</span></li>
+                <li><fa-icon [icon]="check"></fa-icon>Shipping Fee: <span> Free</span></li>
+            </ul>
+            <div class="purchase-info">
+                <button (click)="quantity('min')">-</button>
+                <input type="text" value="{{quantityy}}" id="">
+                <button (click)="quantity('max')">+</button>
+                <button class="btn btn-outline-success btn-sm m-2 " (click)="open(mymodal)">Buy Now</button>
+                <button *ngIf="!removecart" class="btn btn-outline-primary btn-sm  m-2" routerLink="/cart"
+                    (click)="addtocart()">Add to
+                    cart</button>
+                <button *ngIf="removecart" class="btn btn-outline-primary btn-sm  m-2"
+                    (click)="removetocart(singleproductdata.id)">Remove
+                    from cart</button>
+            </div>
+        </div>
+       </div>
+    </div>
+
+
+    <!-- Modal popup -->
+    <ng-template #mymodal let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Details</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">x</span>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="modal-body">
+                    <img src="{{singleproductdata.imageurl}}" alt="" srcset="">
+                </div>
+                <div class="modal-body">
+                    <p><strong>Category</strong> : {{singleproductdata.catergory}}</p>
+                    <p><strong>Price</strong> : {{singleproductdata.price}}</p>
+                    <span><strong>Color</strong> :<p [style.background]="singleproductdata.color" class="productcolor">
+                        </p></span>
+                    <p><strong>Quantity</strong> : {{singleproductdata.quantity}}</p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Buy
+                    Now</button>
+            </div>
+            <div class="row" *ngIf="productremovecartmsg">
+                <div class="col-lg-5">
+                    <div class="alert alert-danger m-1" role="alert">
+                        {{productremovecartmsg}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ng-template>
+</div>
+</div>

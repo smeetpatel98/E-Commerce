@@ -1,0 +1,122 @@
+<div class="fluid-container px-3">
+    <div class="row m-3">
+        <div class="col-lg-3">
+            <h2>Add New Product:</h2>
+            <form #product="ngForm" (ngSubmit)="newproduct(product.value)" class="formtags">
+                <div class="mb-3">
+                    <label for="companyproductname" class="form-label">Enter Product Company Name:</label>
+                    <input type="text" class="form-control" ngModel name="companyname">
+                </div>
+                <div class="mb-3">
+                    <label for="productname" class="form-label">Enter Product Name:</label>
+                    <input type="text" class="form-control" ngModel name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="productprice" class="form-label">Enter Product Price:</label>
+                    <input type="number" class="form-control" ngModel name="price">
+                </div>
+                <div class="mb-3">
+                    <label for="productcolor" class="form-label">Enter Product Color:</label>
+                    <input type="text" class="form-control" ngModel name="color">
+                </div>
+                <div class="mb-3">
+                    <label for="productcategory" class="form-label">Enter Product Category:</label>
+                    <input type="text" class="form-control" ngModel name="catergory">
+                </div>
+                <div class="mb-3">
+                    <label for="productcategory" class="form-label">Enter Product description:</label>
+                    <textarea class="form-control" ngModel name="description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="productimageurl" class="form-label">Enter Product ImageUrl:</label>
+                    <textarea class="form-control" ngModel name="imageurl"></textarea>
+                </div>Or
+                <div class="mb-3">
+                    <label for="uploadimage" class="form-label">Upload Image:</label>
+                    <img [src]="url" alt="">
+                    <input type="file" ngModel name="imageurl" (change)="imageupload($event)">
+                </div>
+
+                <button type="submit" class="btn btn-primary m-1">Add</button>
+                <button type="reset" class="btn btn-primary m-1">Clear</button>
+
+                <div class="row" *ngIf="addproductmessage">
+                    <div class="col-lg-5">
+                        <div class="alert alert-danger m-1" role="alert">
+                            {{addproductmessage}}
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-9">
+            <h2>Product Details:</h2>
+            <div class="card mb-2" *ngFor="let x of productlist let i= index">
+                <div class="maindetails">
+                <img class="card-img-top" src="{{x.imageurl}}" alt="Card image cap">
+                <div class="card-body m-2">
+                    <div class="text">
+                    <h5 class="list-group-item-heading">Company Name: {{x.companyname}}</h5>
+                    <p class="list-group-item-heading">Product Name: {{x.name}}</p>
+                    <p class="list-group-item-text">Color: {{x.color}}</p>
+                    <p class="list-group-item-text">Catergory: {{x.catergory}}</p>
+                    <p class="list-group-item-text">Price: {{x.price}}</p>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary mt-1" (click)="open(mymodal)"> 
+                        <fa-icon [icon]="info"></fa-icon></button>
+                    <button type="button" class="btn btn-danger mt-1 mx-1 " (click)="delete(x.id)">
+                        <fa-icon [icon]="deleteicon"></fa-icon>
+                    </button>
+                    <button type="button" class="btn btn-success mt-1"
+                        routerLink="/app-seller-update-product/{{x.id}}">
+                        <fa-icon [icon]="editicon"></fa-icon>
+                    </button>
+
+                </div>
+                
+                </div>
+            </div>
+
+                <!-- Modal popup -->
+                <ng-template #mymodal let-modal>
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="modal-basic-title">Details</h4>
+                        <button type="button" class="close" aria-label="Close"
+                            (click)="modal.dismiss('Cross click')">
+                            <span aria-hidden="true">X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        {{x.description}}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-dark"
+                            (click)="modal.close('Save click')">Ok</button>
+                    </div>
+                </ng-template>
+                <!-- <ul class="list-group list-group-flush">
+                            <li class="list-group-item">..</li>
+                            <li class="list-group-item">..</li>
+                        </ul> -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-6 col-sm-6">
+            <div class="row">
+
+                <!-- <div class="col-6"> -->
+              
+                <div class="row" *ngIf="productdeletemsg">
+                    <div class="col-lg-5">
+                        <div class="alert alert-success m-1" role="alert">
+                            {{productdeletemsg}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->

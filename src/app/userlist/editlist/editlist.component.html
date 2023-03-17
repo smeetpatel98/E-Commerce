@@ -1,0 +1,39 @@
+<div class="container">
+    <h2>Edit </h2>
+    <form #useredit="ngForm" (ngSubmit)="edituser(useredit.value)">
+        <div class="mb-3">
+            <label for="uploadimage" class="form-label">Upload Image:</label>
+            <img [src]="url" alt="">
+            <input type="file" ngModel="{{user?.image}}" (change)="imageupload($event)" name="userimg">
+        </div>
+        <div class="form-group py-2">
+            <label for="exampleInputEmail1">Name:</label>
+            <input type="email" class="form-control" id="name" ngModel="{{user?.name}}" name="name"
+                aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group  py-2">
+            <label for="exampleInputEmail1">Email address:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" ngModel="{{user?.email}}" name="email"
+                aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group  py-2">
+            <label for="exampleInputPassword1">Password:</label>
+            <input type="password" class="form-control" ngModel="{{user?.password}}" id="exampleInputPassword1"
+                name="password" placeholder="Password">
+        </div>
+        <div class="form-group py-2">
+            <label for="exampleInputPassword11">Confirm Password:</label>
+            <input type="password" class="form-control" id="exampleInputPassword11" ngModel="{{user?.confpassword}}"
+                name="confpassword" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary py-2">Submit</button>
+        <button type="submit" class="btn btn-primary py-2" routerLink="/app-userlist">Back to List</button>
+        <div class="row" *ngIf="usereditmsg">
+            <div class="col">
+                <div class="alert alert-danger m-1" role="alert">
+                    {{usereditmsg}}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

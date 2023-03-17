@@ -1,0 +1,120 @@
+
+<!-- --------------------------------- -->
+<section class="h-auto h-custom cartheight" style="background-color: #eee;">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card shopping-cart" style="border-radius: 15px;">
+            <div class="card-body text-black">
+  
+              <div class="row">
+                <div class="col-lg-6 px-5 py-4">
+  
+                  <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your products</h3>
+  
+                  <div class="d-flex align-items-center mb-5" *ngFor="let item of cart">
+                    <div class="flex-shrink-0">
+                      <img src={{item.imageurl}} 
+                        class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                      <h5 class="text-primary">{{item.name}} x<small>{{item.quantity}}</small></h5>
+                      <h6 [style.background]="item.color" class="productcolor"></h6>
+                      <div class="d-flex align-items-center">
+                        <p class="fw-bold mb-0 me-5 pe-3">Rs.{{item.totalprice}}</p>      
+                      </div>
+                    </div>
+                    <fa-icon [icon]="trash" (click)="removetocart(item.productid)"></fa-icon>
+                  </div>
+
+                  <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your Wishlist(pending)</h3>
+  
+                  <!-- <div class="d-flex align-items-center mb-5" *ngFor="let item of cart">
+                    <div class="flex-shrink-0">
+                      <img src={{item.imageurl}} 
+                        class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                      <h5 class="text-primary">{{item.name}} x<small>{{item.quantity}}</small></h5>
+                      <h6 [style.background]="item.color" class="productcolor"></h6>
+                      <div class="d-flex align-items-center">
+                        <p class="fw-bold mb-0 me-5 pe-3">Rs.{{item.totalprice}}</p>      
+                      </div>
+                    </div>
+                    <fa-icon [icon]="trash" (click)="removetocart(item.productid)"></fa-icon>
+                  </div> -->
+  
+                  <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+                    <h4>Summary:</h4>
+                    <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+                  <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                    <h6 class="fw-bold mb-0">Tax:</h6>
+                    <h6 class="fw-bold mb-0">{{tax}}</h6>
+                  </div>
+                  <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                    <h6 class="fw-bold mb-0">Delivery Charge:</h6>
+                    <h6 class="fw-bold mb-0">{{delivery}}</h6>
+                  </div>  
+                  <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                    <h6 class="fw-bold mb-0">Total:</h6>
+                    <h6 class="fw-bold mb-0">{{carttotal}}</h6>
+                  </div>
+  
+                </div>
+                <div class="col-lg-6 px-5 py-4">
+  
+                  <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+  
+                  <form class="mb-5">
+  
+                    <div class="form-outline mb-5">
+                      <label class="form-label" for="typeText">Card Number</label>
+                      <input type="number" id="typeText" class="form-control form-control" siez="17"
+                        value="" minlength="19" maxlength="19" />
+                     
+                    </div>
+  
+                    <div class="form-outline mb-5">
+                      <label class="form-label" for="typeName">Name on card</label>
+                      <input type="text" id="typeName" class="form-control form-control" siez="17"
+                        value="" />
+                    
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-6 mb-5">
+                        <div class="form-outline">
+                          <label class="form-label" for="typeExp">Expiration</label>
+                          <input type="date" id="typeExp" class="form-control form-control" value=""
+                            size="7" id="exp" minlength="7" maxlength="7" />
+                       
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-5">
+                        <div class="form-outline">
+                          <label class="form-label" for="typeText">Cvv</label>
+                          <input type="password" id="typeText" class="form-control form-control"
+                            value="" size="1" minlength="3" maxlength="3" />         
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block btn-sm">Buy now</button>
+                    <button type="button" class="btn btn-primary btn-block btn-sm"  routerLink="/app-shopping-list">Back to shopping</button>
+  
+                  </form>
+                  <div *ngIf="productremovecartmsg">
+                    <div class="alert alert-danger m-1" role="alert">
+                        {{productremovecartmsg}}
+                    </div>
+                </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
