@@ -20,6 +20,7 @@ export class SellerapiService {
 
   constructor(private http: HttpClient, private router: Router, private encrDecr: EncrdecrserviceService) { }
 
+  // app = this.http;
   //first method to call API(Make this service)
   //Jokes APi
   jokes() {

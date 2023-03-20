@@ -201,41 +201,26 @@
     }
   ],
   "cartdata": [
-    {
-      "companyname": "Lifelong",
-      "name": "Ceiling Fan",
-      "price": 1100,
-      "color": "Coffee Brown",
-      "catergory": "Ceiling Fan",
-      "description": "Dynamically Balanced Blades\nSuperior components for longer life\nSuper Reliable and Efficient 100% Copper Motor\nHigh Speed Fan (380 RPM) and Corrosion Resistant",
-      "imageurl": "https://www.reliancedigital.in/medias/Lifelong-LLCF150-FANS-492910946-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDUwNnxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDY5Lzk4MzEwMDY5Mjg5MjYuanBnfDFjZDgzMGZjNzA5NWE2YTcwZjM0Mjc0MTY4MzI1YmRjODMyNmM5MGYzZTE5Y2I3MWRhMzI1ZmNkZWVmYWZhMmI",
-      "created": "23-2-2023",
-      "id": 8,
-      "quantity": 1,
-      "userid_login": 1,
-      "totalprice": 1100,
-      "taxamount": 1140,
-      "tax": 40,
-      "productid": 8
-    },
-    {
-      "companyname": "Babique Unicorn",
-      "name": "Teddy Bear Plush Soft Toy ",
-      "price": 208,
-      "color": "Yellow",
-      "catergory": "Toy",
-      "description": "Made out of non-toxic polyester and fur fabrics of good quality\nSoft and Cuddly filling, Huggable and loveable for someone special, Teach your loved one the act of hugging with the help of these teddies\nExcellent Poly-staple & conjugate filling fiber used has good resiliency making it most appropriate for machine or hand wash\nSize:- 25 Cm",
-      "imageurl": "https://m.media-amazon.com/images/I/31QPmZKotmL.jpg",
-      "created": "23-2-2023",
-      "id": 14,
-      "quantity": 1,
-      "userid_login": 1,
-      "user_name": "Smeet Patel",
-      "totalprice": 208,
-      "taxamount": 248,
-      "tax": 40,
-      "productid": 14
-    },
+    [
+      {
+        "companyname": "Storio Cubes",
+        "name": "Cubes 3x3 ",
+        "price": 145,
+        "color": "MultiColour",
+        "catergory": "Toy",
+        "description": "mproves your concentration improves your hand eye co preservationists problem solving skills Improves creativity & imagination skills\nStorio makes toys that are entertaining and safe. All toys are EN71 certified which is defined by stringent European standards and hence devoid of banned phthalates.\nSpeedup your solving time without any effort and bring you the best turning feeling in advance. Easy turning and smooth play.",
+        "imageurl": "https://m.media-amazon.com/images/I/61fB-s4DPVS._SX522_.jpg",
+        "created": "23-2-2023",
+        "id": 13,
+        "quantity": 2,
+        "userid_login": 1,
+        "user_name": "Smeet Patel",
+        "totalprice": 290,
+        "taxamount": 330,
+        "tax": 40,
+        "productid": 13
+      }
+    ],
     {
       "companyname": "Storio Cubes",
       "name": "Cubes 3x3 ",
@@ -246,11 +231,11 @@
       "imageurl": "https://m.media-amazon.com/images/I/61fB-s4DPVS._SX522_.jpg",
       "created": "23-2-2023",
       "id": 13,
-      "quantity": 1,
-      "userid_login": 2,
-      "user_name": "Test",
-      "totalprice": 145,
-      "taxamount": 185,
+      "quantity": 2,
+      "userid_login": 1,
+      "user_name": "Smeet Patel",
+      "totalprice": 290,
+      "taxamount": 330,
       "tax": 40,
       "productid": 13
     }
@@ -261,7 +246,7 @@
       "password": "rT5PQbxEF4S8Xb4sXe4qjA==",
       "id": 1,
       "lastlogin_date": "Tue Feb 28 2023 15:29:00 GMT+0530 (India Standard Time)/15:29:0",
-      "currentlogin_date": "Thu Mar 02 2023 17:11:44 GMT+0530 (India Standard Time)/17:11:44"
+      "currentlogin_date": "Sat Mar 18 2023 21:08:46 GMT+0530 (India Standard Time)/21:8:46"
     },
     {
       "email": "test@user.com",

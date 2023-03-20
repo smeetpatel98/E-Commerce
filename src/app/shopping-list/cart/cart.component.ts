@@ -64,7 +64,14 @@ export class CartComponent implements OnInit {
         }
         // console.log("carttotal",carttotal);
       });
+      //Added by Parth new calculation
+      // let amount = 0;
+      // let amount = this.cartitem.reduce((firstItem:any , secondItem:any) => {
+      //     return firstItem + secondItem.price;
+      // }, 0);
+      // console.log("amount",amount);
     }
+    
     return this.cartitem;
   }
 
